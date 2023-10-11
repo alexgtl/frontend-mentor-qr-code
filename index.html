@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+      :root {
+        --white: hsl(0, 0%, 100%);
+        --light-gray: hsl(212, 45%, 89%);
+        --grayish-blue: hsl(220, 15%, 55%);
+        --dark-blue: hsl(218, 44%, 22%);
+      }
+
+      html, body {
+        font-size: 15px;
+        font-family: 'Outfit', sans-serif;
+      }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main>
+      <section class="bg-[var(--light-gray)] h-screen w-screen grid place-items-center">
+        <div class="card bg-[var(--white)] max-w-[240px] rounded-xl p-3 text-center font-bold">
+          <img src="./images/image-qr-code.png" class="rounded-xl" alt="Qr code">
+
+          <h1 class="pt-5 text-lg px-2 text-[var(--dark-blue)]">
+            Improve your front-end skills by building projects
+          </h1>
+
+          <p class="pt-4 pb-8 px-2 text-xs text-[var(--grayish-blue)]">
+            Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="attribution fixed bottom-0 w-screen center flex flex-col sm:flex-row items-center sm:justify-between px-8 py-4">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>
+      <p> Coded by <a href="https://github.com/alexgtl">Alex Gutiérrez</a></p>
+    </footer>
+
+  </body>
+</html>
